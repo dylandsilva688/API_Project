@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Clone the repository') {
             steps {
-               git credentialsId: 'Github_username_password', url: 'https://github.com/dylandsilva688/Project_Demo.git'
+               git credentialsId: 'Github_username_password', url: 'https://github.com/dylandsilva688/API_Project.git'
             }
         }
 
