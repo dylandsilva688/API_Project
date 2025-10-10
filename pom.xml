@@ -13,6 +13,7 @@
     <groupId>com.lakshy.blog</groupId>
     <artifactId>blogging-app-apis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>     
     <name>blogging-app-apis</name>
     <description>Backend for Blog app using Spring Boot</description>
 
