@@ -1,6 +1,14 @@
 
 pipeline {
     agent any
+
+    environment {
+        JAR_NAME = "blogging-app-apis.jar"
+        CONTEXT_PATH = "/blogging-app-apis"
+        PORT = "8181"
+    }
+
+    
     triggers {
   cron 'H/5 * * * *'
 }
