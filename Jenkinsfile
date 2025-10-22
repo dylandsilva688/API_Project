@@ -31,8 +31,10 @@ pipeline {
 
         stage('Build the maven code') {
             steps {
-            sh 'mvn clean install -DskipTests'
-                 }
+                dir('API_Projects') {   // Move into the correct subdirectory
+                    bat 'mvn clean package'
+                }
+            }
     }
 
 stage('Deploy to tomcat') {
