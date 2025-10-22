@@ -31,7 +31,7 @@ pipeline {
 
         stage('Build the maven code') {
             steps {
-                dir('API_Projects') {   // Move into the correct subdirectory
+                dir('API_Project') {   // Move into the correct subdirectory
                     bat 'mvn clean package'
                 }
             }
